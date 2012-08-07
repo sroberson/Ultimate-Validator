@@ -1,0 +1,141 @@
+<html>
+
+<head>
+
+<title>Ultimate Validator</title>
+
+<style type="text/css">
+
+h1{ font-size: 110%; }
+
+fieldset{ margin: 30px 0px; }
+div{ margin: 15px 0px; }
+
+.fieldErrorText{ color: red; }
+.fieldErrorBorder{ border: 1px solid red; }
+
+</style>
+
+</head>
+
+<h1>The Ultimate Javascript Validator ( UJV )</h1>
+
+<p>Illustrates usage of the UJV.</p>
+
+<form action="" method="GET" id="form1" name="form1">
+
+<fieldset>
+
+	<legend>Basic Text Validations</legend>
+
+	<div>
+		<label for="firstname">First name:</label> <input type="text" value="" id="firstname" name="firstname" />
+	</div>
+
+	<div>
+		<label for="lastname">Last name:</label> <input type="text" value="" id="lastname" name="lastname" />
+	</div>
+
+</fieldset>
+
+<fieldset>
+
+	<legend>Rule-based Text Validations</legend>
+
+	<div>
+	<label for="email">Email:</label> <input type="text" value="" id="email" name="email" />
+	</div>
+
+	<div>
+	<label for="zipcode">U.S. ZIP Code:</label> <input type="text" value="" id="zipcode" name="zipcode" />
+	</div>
+
+	<div>
+	<label for="zipcode_uk">U.K. ZIP Code:</label> <input type="text" value="" id="zipcode_uk" name="zipcode_uk" />
+	</div>
+
+</fieldset>
+
+<fieldset>
+
+	<legend>Depends on other field Text Validations</legend>
+
+	<div>
+	<label for="password">Password:</label> <input type="text" value="" id="password" name="password" />
+	</div>
+
+	<div>
+	<label for="passwordchecked">Password Again:</label> <input type="text" value="" id="passwordchecked" name="passwordchecked" />
+	</div>
+
+</fieldset>
+
+<fieldset>
+
+	<legend>Radio Button Validations</legend>
+
+	<div>
+	<label for="pickles">Pickles:</label> <input type="radio" value="pickles" id="pickles" name="items" />
+	</div>
+
+	<div>
+	<label for="onions">Onions:</label> <input type="radio" value="onions" id="onions" name="items" />
+	</div>
+
+	<div>
+	<label for="sawdust">Sawdust:</label> <input type="radio" value="sawdust" id="sawdust" name="items" />
+	</div>
+
+</fieldset>
+
+<fieldset>
+
+	<legend>Checkbox Validations</legend>
+
+	<div>
+	<label for="pork">Pork:</label> <input type="checkbox" value="pork" id="pork" name="pork" />
+	</div>
+
+	<div>
+	<label for="beef">Beef:</label> <input type="checkbox" value="beef" id="beef" name="beef" />
+	</div>
+
+	<div>
+	<label for="chicken">Chicken:</label> <input type="checkbox" value="chicken" id="chicken" name="chicken" />
+	</div>
+
+</fieldset>
+
+<fieldset>
+
+	<legend>Dropdown Validations</legend>
+
+	<div>
+	<label for="cars">Cars:</label>
+	<select id="cars" name="cars">
+	  <option value="volvo">Volvo</option>
+	  <option value="saab">Saab</option>
+	  <option value="mercedes">Mercedes</option>
+	  <option value="audi">Audi</option>
+	</select>
+	</div>
+
+	<div>
+	<label for="cars_multi">Cars Multiple:</label>
+	<select id="cars_multi" name="cars_multi" multiple="multiple">
+	  <option value="volvo">Volvo</option>
+	  <option value="saab">Saab</option>
+	  <option value="mercedes">Mercedes</option>
+	  <option value="audi">Audi</option>
+	</select>
+	</div>
+
+</fieldset>
+
+<input type="submit" value="Submit" id="submit" name="submit" />
+
+</form>
+
+<script type="text/ecmascript" src="validator.js"></script>
+
+</html>
